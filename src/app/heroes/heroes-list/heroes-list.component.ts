@@ -4,8 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { IHeroes } from '../heroes';
 @Component({
   selector: 'app-heroes-list',
-  standalone: true,
-  imports: [CommonModule, FormsModule],
+  standalone: false,
   templateUrl: './heroes-list.component.html'
 })
  

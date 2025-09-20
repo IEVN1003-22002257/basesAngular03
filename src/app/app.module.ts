@@ -18,7 +18,8 @@ import { OperaBasComponent } from './formularios/opera-bas/opera-bas.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
