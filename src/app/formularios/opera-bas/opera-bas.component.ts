@@ -7,13 +7,23 @@ import { Component } from '@angular/core';
   styleUrl: './opera-bas.component.css'
 })
 export class OperaBasComponent {
-  num1:string='';
-  num2:string='';
-  resultado:number=0;
+  num1: string = '';
+  num2: string = '';
+  resultado: number = 0;
+  operacion: string = '';
 
-  sumar():void{
-    this.resultado=parseInt(this.num1)+parseInt(this.num2);
+  calcular(): void {
+    if (this.operacion === 'suma') {
+      this.resultado = parseInt(this.num1) + parseInt(this.num2);
+    }
+    if (this.operacion === 'resta') {
+      this.resultado = parseInt(this.num1) - parseInt(this.num2);
+    }
+    if (this.operacion === 'multiplicacion') {
+      this.resultado = parseInt(this.num1) * parseInt(this.num2);
+    }
+    if (this.operacion === 'division') {
+      this.resultado = parseInt(this.num2) !== 0 ? parseInt(this.num1) / parseInt(this.num2) : 0;
+    }
   }
-
-
 }
